@@ -1,5 +1,3 @@
-import Long from "long";
-
 export declare enum BroadcastMode {
   /** Return after tx commit */
   Block = "block",
@@ -81,7 +79,7 @@ export interface SignDoc {
    */
   chainId: string;
   /** account_number is the account number of the account in state */
-  accountNumber: Long;
+  accountNumber: bigint;
 }
 
 export interface DirectSignResponse {
